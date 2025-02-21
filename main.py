@@ -53,11 +53,10 @@ while True:
         time.sleep(.2)
         temp = dht_sensor.temperature()
         humidity = dht_sensor.humidity()
-        # print(temp, humidity)
+        print(temp, humidity)
         oled.fill(0)
-        oled.text("Hello NIgga!", 0, 0)
-        # oled.text("Temp: {} C".format(temp), 0, 0)
-        # oled.text("Humidity: {}%".format(humidity), 0, 16)
+        oled.text("Temp: {} C".format(temp), 0, 0)
+        oled.text("Humidity: {}%".format(humidity), 0, 16)
         oled.show()
 
 
